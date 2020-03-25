@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  es-dev-server:
+    container_name: es-dev-server
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8000:8000
+    stdin_open: true
+    tty: true
